@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --greenish-blue: rgb(66, 145, 152);
+  --light-blue: rgb(120, 199, 227);
+}
+
+main {
+  
+}
+
+p {
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header {
+  background-color: rgb(66, 145, 152);
+  padding: 2rem;
+}
+
+.header h3 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  margin-left: 9rem;
+}
+
+.anchor {
+  text-decoration: none;
+  color: var(--light-blue);
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 10rem;
+}
+
+.left {
+  flex-basis: 70rem;
+  margin-right: 5rem;
+}
+
+.right {
+  flex-basis: 40rem;
+
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem 10rem;
+}
+
+.button {
+  background-color: var(--greenish-blue);
+  padding: 0.7rem 2.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.image {
+  width: 100%;
+}
+
+.chart {
+  flex-basis: 100%;
+  height: 15rem;
+  margin-right: 5rem;
+}
+
+.description {
+  flex-basis: 100%;
+  
+}
+
+.caption {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.month-picker {
+  width: 30rem;
+  height: 5rem;
+}
+
+@media (max-width: 900px) {
+  .body {
+    flex-direction: column-reverse;
+  }
+
+  .left {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-top: 2rem;
+
+  }
+  
+  .right {
+    flex-basis: 100%;
+  }
+
+  .bottom {
+    flex-direction: column-reverse;
+  }
+
+  .chart {
+    height: 15rem;
+    margin-right: 0;
+    margin-top: 15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .body {
+    margin: 2rem 5rem;
+  }
+
+  .chart {
+    margin-top: 15rem;
+  }
+}
